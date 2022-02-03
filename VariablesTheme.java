@@ -22,8 +22,6 @@ public class  VariablesTheme {
         System.out.println("Итоговая сумма товаров со скидкой равна " + sum +"руб." );
         System.out.println("Сумма скидки равна "+ sumDiscount + " руб.\n");
         
-        
-
 //3. Вывод на консоль слова JAVA 
         System.out.println("3. Вывод на консоль слова JAVA");
         System.out.println("   J    a  v     v  a");
@@ -63,11 +61,11 @@ public class  VariablesTheme {
         double num1 =5;
         double num2 = 9;
         double num3;
-        System.out.println("num1 = "+ num1 + " " + "num2 = " + num2);
+        System.out.println("num1 = " + num1 + " " + "num2 = " + num2);
         num3=num1;
         num1=num2;
         num2=num3;
-        System.out.println("num1 = "+ num1 + " " + "num2 = " + num2 + "\n");
+        System.out.println("num1 = " + num1 + " " + "num2 = " + num2 + "\n");
 
 //6. Вывод ASCII-символов и их кодов  
         System.out.println("6. Вывод ASCII-символов и их кодов"); 
@@ -107,12 +105,12 @@ public class  VariablesTheme {
         int hundreds = chislo  / 100;
         int dozens =(chislo  / 10) % 10;
         int units = chislo  % 10;
-        System.out.println("сотен = " + hundreds+ " " + "десятков = " + dozens +" " + "единиц =  " + units + "\n");
+        System.out.println("сотен = " + hundreds + " " + "десятков = " + dozens +" " + "единиц =  " + units + "\n");
 
 //10.Преобразование секунд
         System.out.println("10.Преобразование секунд");
         long second = 86399;
-        long hours = (second -second % 3600)/3600;
+        long hours = (second - second % 3600)/3600;
         long minutes = (second % 3600 - second % 3600 % 60) / 60;
         long seconds = second % 3600 % 60;
     
@@ -125,7 +123,7 @@ public class  VariablesTheme {
         System.out.print(":" + minutes);  
     
         if (seconds < 10) {
-        System.out.println(":" + "0" +seconds);
+        System.out.println(":" + "0" + seconds);
         } else {
         System.out.println(":" + seconds);
         }
