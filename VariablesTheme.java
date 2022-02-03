@@ -14,7 +14,7 @@ public class  VariablesTheme {
         + "\nsmbios = " + smbios + "\neСontVersion = " + eСontVersion + "\naType = " + aType + "\nisTrue = " + isTrue+"\n" );
 
 //2. Расчет стоимости товара со скидкой
-        System.out.println("\n2. Расчет стоимости товара со скидкой");
+        System.out.println("2. Расчет стоимости товара со скидкой");
         int x = 100;
         int y = 200;
         int sumDiscount = ((x+y)/100)*11;
@@ -25,14 +25,14 @@ public class  VariablesTheme {
         
 
 //3. Вывод на консоль слова JAVA 
-        System.out.println("\n3. Вывод на консоль слова JAVA");
+        System.out.println("3. Вывод на консоль слова JAVA");
         System.out.println("   J    a  v     v  a");
         System.out.println("   J   a a  v   v  a a"   );
         System.out.println("J  J  aaaaa  V V  aaaaa"  );
         System.out.println(" JJ  a     a  V  a     a\n");
 
 //4. Отображение min и max значений числовых типов данных
-        System.out.println("\n4. Отображение min и max значений числовых типов данных");
+        System.out.println("4. Отображение min и max значений числовых типов данных");
         byte num_1 = 127;
         short num_2 = 32767;
         int num_3 = 2147483647;
@@ -59,18 +59,18 @@ public class  VariablesTheme {
         + (int)num_5 + "\n");
         
 //5. Перестановка значений переменных
-        System.out.println("\n5. Перестановка значений переменных");
+        System.out.println("5. Перестановка значений переменных");
         double num1 =5;
         double num2 = 9;
         double num3;
-        System.out.println("num1 = "+ num1 + " " + "num2 = " + num2 + "\n");
+        System.out.println("num1 = "+ num1 + " " + "num2 = " + num2);
         num3=num1;
         num1=num2;
         num2=num3;
         System.out.println("num1 = "+ num1 + " " + "num2 = " + num2 + "\n");
 
 //6. Вывод ASCII-символов и их кодов  
-        System.out.println("\n6. Вывод ASCII-символов и их кодов"); 
+        System.out.println("6. Вывод ASCII-символов и их кодов"); 
         char a = 35;
         char b = 38;
         char c = 64;
@@ -80,7 +80,7 @@ public class  VariablesTheme {
         + "\nДесятичное значение 95 = " + e );
 
 //7.Произведение и сумма цифр числа
-        System.out.println("\n7. Произведение и сумма цифр числа");
+        System.out.println("7. Произведение и сумма цифр числа");
         int number = 345;
         int number1 = number / 100;
         int number2 =(number / 10) % 10;
@@ -102,7 +102,7 @@ public class  VariablesTheme {
         System.out.println( sym_1 + "" + sym_3 + sym_3 + sym_3 + sym_3 + sym_1 + sym_2 + sym_3  +sym_3 + sym_2);
 
 //9. Отображение сотен, десятков, единиц числа
-        System.out.println("\n9. Отображение сотен, десятков, единиц числа");
+        System.out.println("9. Отображение сотен, десятков, единиц числа");
         int chislo = 123;
         int hundreds = chislo  / 100;
         int dozens =(chislo  / 10) % 10;
@@ -110,7 +110,7 @@ public class  VariablesTheme {
         System.out.println("сотен = " + hundreds+ " " + "десятков = " + dozens +" " + "единиц =  " + units + "\n");
 
 //10.Преобразование секунд
-        System.out.println("\n10.Преобразование секунд");
+        System.out.println("10.Преобразование секунд");
         long second = 86399;
         long hours = (second -second % 3600)/3600;
         long minutes = (second % 3600 - second % 3600 % 60) / 60;
@@ -124,7 +124,7 @@ public class  VariablesTheme {
     
         System.out.print(":" + minutes);  
     
-        if (seconds<10) {
+        if (seconds < 10) {
         System.out.println(":" + "0" +seconds);
         } else {
         System.out.println(":" + seconds);
