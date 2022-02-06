@@ -15,11 +15,12 @@ public class  VariablesTheme {
 
         //2. Расчет стоимости товара со скидкой
         System.out.println("2. Расчет стоимости товара со скидкой");
-        int product_1 = 100;
-        int product_2 = 200;
-        int discountAmount = ((product_1 + product_2) / 100) * 11;
-        int discountedAmount =(product_1 + product_2) - discountAmount;
-        System.out.println("Итоговая сумма товаров со скидкой равна " + discountedAmount + "руб." );
+        int priceX = 100;
+        int priceY = 200;
+        int totalCost = priceX + priceY;
+        int discountAmount = (totalCost / 100) * 11;
+        int discoutnPrice = totalCost - discountAmount;
+        System.out.println("Итоговая сумма товаров со скидкой равна " +  discoutnPrice + "руб." );
         System.out.println("Сумма скидки равна " + discountAmount + " руб.\n");
         
         //3. Вывод на консоль слова JAVA 
@@ -62,9 +63,9 @@ public class  VariablesTheme {
         double num2 = 9.0;
         double num3;
         System.out.println("num1 = " + num1 + " " + "num2 = " + num2);
-        num3=num1;
-        num1=num2;
-        num2=num3;
+        num3 = num1;
+        num1 = num2;
+        num2 = num3;
         System.out.println("num1 = " + num1 + " " + "num2 = " + num2 + "\n");
 
         //6. Вывод ASCII-символов и их кодов  
@@ -98,7 +99,7 @@ public class  VariablesTheme {
         System.out.println(space + "" + space + space + slash + space + space + backslash);
         System.out.println(space + "" + space + slash + underscore + leftParenthesis + space + rightParenthesis + backslash);
         System.out.println(space + "" + slash + space + space + space + space + space + space + backslash);
-        System.out.println(slash + "" + underscore + underscore + underscore + underscore + slash + backslash + underscore  +underscore + backslash + "\n");
+        System.out.println(slash + "" + underscore + underscore + underscore + underscore + slash + backslash + underscore  + underscore + backslash + "\n");
 
         //9. Отображение сотен, десятков, единиц числа
         System.out.println("9. Отображение сотен, десятков, единиц числа");
