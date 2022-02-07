@@ -1,6 +1,6 @@
 public class IfElseStatementTheme {
 	public static void main (String [] args) {
-		//1. Перевод псевдокода на язык Java
+		/*//1. Перевод псевдокода на язык Java
 		System.out.println("Перевод псевдокода на язык Java");
 		int age = 17;
 		if(age > 20) {
@@ -33,7 +33,7 @@ public class IfElseStatementTheme {
 		}(FirstLetterName == 'I') {
 	         System.out.println("Перевод псевдокода на язык Java");
 	    } else {
-	    System.out.println("Перевод псевдокода на язык Java");
+	    System.out.println("Перевод псевдокода на язык Java");*/
 
 	    //2. Поиск максимального и минимального числа
         System.out.println("Поиск максимального и минимального числа.");
