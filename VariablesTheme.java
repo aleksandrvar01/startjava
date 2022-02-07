@@ -66,7 +66,7 @@ public class  VariablesTheme {
         num3 = num1;
         num1 = num2;
         num2 = num3;
-        System.out.println("num1 = " + num1 + " " + "num2 = " + num2 + "\n");
+        System.out.println(" num1 = " + num1 + " " + "num2 = " + num2 + "\n");
 
         //6. Вывод ASCII-символов и их кодов  
         System.out.println("6. Вывод ASCII-символов и их кодов"); 
