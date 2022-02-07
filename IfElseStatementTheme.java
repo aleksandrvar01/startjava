@@ -40,7 +40,7 @@ public class IfElseStatementTheme {
 
         //3.Работа с числом
         System.out.println("3. Работа с числом.");
-        int number = -18;
+        int number = 18;
         if (number % 2 == 0) {
             System.out.println("Число является четным.");
         } else {
@@ -65,7 +65,7 @@ public class IfElseStatementTheme {
         int d;
         int e;
         if ((d = ((a / 100) % 10)) == ((b / 100) % 10)) {
-            System.out.println("Цифры из разряда сотен одинаковые равны "+ d);
+            System.out.println("Цифры из разряда сотен одинаковые равны " + d);
         }    
         if ((c = ((a / 10) % 10)) == ((b / 10) %10)){
             System.out.println("Цифры из разряда десятков одинаковые равны " + c);
@@ -76,7 +76,7 @@ public class IfElseStatementTheme {
 
          //5.Определение буквы или символа по их коду
         System.out.println("5. Определение буквы или символа по их коду.");
-        char element ='\u005A';
+        char element = '\u005A';
         element = (char)'\u005A';
         System.out.println("В таблице символов unicode \'\\u005A\' является буквой " + element + "\n");
 
@@ -88,21 +88,21 @@ public class IfElseStatementTheme {
         int accruedInterestTotal ; // суммарный доход по вкладу
         if (depositAmount < 100000){
             interestRate = 5;
-            accruedInterestPerYear = ((depositAmount * interestRate * 365/365)/100);
-            accruedInterestTotal = depositAmount + accruedInterestPerYear;
+            accruedInterestPerYear = ((depositAmount * interestRate * 365 / 365) / 100);
+            accruedInterestTotal = depositAmount + accruedInterestPerYear; 
             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + accruedInterestPerYear
                     + "\nИтоговая сумму с % = " + accruedInterestTotal);
         }
         if (depositAmount <= 300000) {
             interestRate = 7;
-            accruedInterestPerYear = ((depositAmount * interestRate * 365/365)/100);
+            accruedInterestPerYear = ((depositAmount * interestRate * 365 / 365) / 100);
             accruedInterestTotal = depositAmount + accruedInterestPerYear;
             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + accruedInterestPerYear
                     + "\nИтоговая сумму с % = " + accruedInterestTotal);
         }
         if ( depositAmount > 300000){
             interestRate = 10;
-            accruedInterestPerYear = ((depositAmount * interestRate * 365/365)/100);
+            accruedInterestPerYear = ((depositAmount * interestRate * 365 / 365) / 100);
             accruedInterestTotal = depositAmount + accruedInterestPerYear;
             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + accruedInterestPerYear
                     + "\nИтоговая сумму с % = " + accruedInterestTotal );
