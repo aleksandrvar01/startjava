@@ -59,7 +59,7 @@ public class IfElseStatementTheme {
 
         //4.Поиск общей цифры в числах
         System.out.println("\n4. Поиск общей цифры в числах.");
-        int	a = 759;
+        int a = 759;
         int b = 353;
         int c;
         int d;
