@@ -90,7 +90,7 @@ public class IfElseStatementTheme {
             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a
                      + "\nИтоговая сумму с % = " + (depositAmount + a));
         }
-        if (depositAmount >= 100000 & depositAmount <= 300000) {
+        if (depositAmount >= 100000 || depositAmount <= 300000) {
             int a = accruedInterestPerYear * (interestRate = 7);
              System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a
                       + "\nИтоговая сумму с % = " + (depositAmount + a));
