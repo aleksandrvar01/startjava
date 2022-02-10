@@ -138,7 +138,7 @@ System.out.println("1. Перевод псевдокода на язык Java");
             System.out.println("- " + profit);
         }
 
-         //9.Определение существования треугольника
+        //9.Определение существования треугольника
         System.out.println("\n9. Определение существования треугольника.");
         int sideA = 5;
         int sideB = 5;
@@ -169,8 +169,6 @@ System.out.println("1. Перевод псевдокода на язык Java");
         int banknoteDenomination_1 = (amountMoney - sumBanknote50 - sumBanknote10);
         System.out.println("купюры наминалом по 50 - " + banknoteDenomination_50 + "шт" + "\nкупюры наминалом по 10 -"+ banknoteDenomination_10 + "шт"
                 + "\nкупюры по наминалом 1 - " + banknoteDenomination_1 + "шт");
-        System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));
-        
-        
+        System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));    
     }
 }
