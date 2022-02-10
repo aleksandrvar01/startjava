@@ -1,26 +1,26 @@
 public class IfElseStatementTheme {
     public static void main (String [] args) {
-    	//"1. Перевод псевдокода на язык Java
+    	//1. Перевод псевдокода на язык Java
         System.out.println("1. Перевод псевдокода на язык Java");
         int age = 18;
-        if(age > 20) {
+        if (age > 20) {
             System.out.println("Входите пожалуйста\n");
         } else {
             System.out.println("Вход для достигших 20 лет.\n");
         }
         boolean maleGender = false;
-        if(!maleGender) {
+        if (!maleGender) {
             System.out.println("Вход только для девушек.\n");
         }
         double manHeight = 1.70;
-        if(manHeight < 1.80) {
+        if (manHeight < 1.80) {
             System.out.println("Вам на первый ряд\n");
         } else {
             System.out.println("Вам на второй ряд\n");
         }
 
         char firstLetterName = "Mary".charAt(0);
-        if(firstLetterName == 'M') {
+        if (firstLetterName == 'M') {
             System.out.println("Возможно её имя Mary\n");
         } else if (firstLetterName == 'I') {
             System.out.println("Возможно её имя Irina\n");
