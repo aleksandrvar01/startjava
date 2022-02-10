@@ -149,10 +149,10 @@ public class IfElseStatementTheme {
         //Формула Герона
         double areaTriangle = (Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC)));
         if (areaTriangle > 0) {
-            System.out.println("Треугольник существует");
-            System.out.println("Площадь треугольника = " + areaTriangle);
+            System.out.println("Треугольник существует\n");
+            System.out.println("Площадь треугольника = " + areaTriangle + "\n");
         } else {
-            System.out.println("Треугольник не существует");
+            System.out.println("Треугольник не существует\n");
         }
         
         System.out.println("|" + "\\");
