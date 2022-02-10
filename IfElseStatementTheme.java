@@ -168,7 +168,7 @@ public class IfElseStatementTheme {
         int banknoteDenomination_10 = (amountMoney - sumBanknote50) / 10;
         int sumBanknote10 = banknoteDenomination_10 * 10;
         int banknoteDenomination_1 = (amountMoney - sumBanknote50 - sumBanknote10);
-        System.out.println("купюры наминалом по 50 - " + banknoteDenomination_50 + "шт" + "\nкупюры наминалом по 10 -"+ banknoteDenomination_10 + "шт"
+        System.out.println("купюры наминалом по 50 - " + banknoteDenomination_50 + "шт" + "\nкупюры наминалом по 10 - " + banknoteDenomination_10 + "шт"
                 + "\nкупюры по наминалом 1 - " + banknoteDenomination_1 + "шт");
         System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));    
     }
