@@ -84,22 +84,22 @@ public class IfElseStatementTheme {
         System.out.println("\n6. Определение суммы вклада и начисленных банком %.");
         int interestRate;
         int depositAmount = 300000;
-        int accruedInterestPerYear = (depositAmount / 100);
+        int a1 = (depositAmount / 100);
         if (depositAmount < 100000) {
-            int a1 = accruedInterestPerYear * (interestRate = 5) ;
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
-                     + "\nИтоговая сумму с % = " + (depositAmount + a1));
+            int interestYear = a1 * (interestRate = 5);
+            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
+                     + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
         }
         if (depositAmount >= 100000 & depositAmount <= 300000) {
-            int a1 = accruedInterestPerYear * (interestRate = 7);
-             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
-                      + "\nИтоговая сумму с % = " + (depositAmount + a1));
+            int interestYear = a1 * (interestRate = 7);
+             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
+                      + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
         }
-        if ( depositAmount > 300000) {
-            int a1 = accruedInterestPerYear * (interestRate = 10);
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
-                     + "\nИтоговая сумму с % = " + (depositAmount + a1));
-        } 
+        if (depositAmount > 300000) {
+            int interestYear = a1 * (interestRate = 10);
+            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
+                     + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
+        }
         
         //7.Определение оценки по предметам
         System.out.println("\n7. Определение оценки по предметам.");
