@@ -48,7 +48,7 @@ public class IfElseStatementTheme {
         }
         if (number > 0) {
             System.out.println("Число является положительным.");
-        } else if(number < 0) {
+        } else if (number < 0) {
             System.out.println("Число является отрицательным.");
         } else {
             System.out.println("Число является нулём.");
