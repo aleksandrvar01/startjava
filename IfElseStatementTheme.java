@@ -1,6 +1,6 @@
 public class IfElseStatementTheme {
     public static void main (String [] args) {
-    	//1. Перевод псевдокода на язык Java
+        //1. Перевод псевдокода на язык Java
         System.out.println("1. Перевод псевдокода на язык Java");
         int age = 18;
         if (age > 20) {
@@ -149,7 +149,8 @@ public class IfElseStatementTheme {
         //Формула Герона
         double areaTriangle = (Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC)));
         if (areaTriangle > 0) {
-            System.out.println("Треугольник существует");   
+            System.out.println("Треугольник существует");
+            System.out.println("Площадь треугольника = " + areaTriangle);
         } else {
             System.out.println("Треугольник не существует");
         }
