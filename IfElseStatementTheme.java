@@ -132,7 +132,7 @@ public class IfElseStatementTheme {
         int rentalRoomMonth = 5000;
         int salesPerMonth = 15000;
         int costOfGoodsMonth  = 9000;
-        int profit = (salesPerMonth - costOfGoodsMonth - rentalRoomMonth) * year ;
+        int profit = (salesPerMonth - costOfGoodsMonth - rentalRoomMonth) * year;
         if (profit > 0) {
             System.out.println("+ " + profit);
         } else {
