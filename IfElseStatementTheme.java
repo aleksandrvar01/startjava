@@ -1,6 +1,7 @@
 public class IfElseStatementTheme {
     public static void main (String [] args) {
-System.out.println("1. Перевод псевдокода на язык Java");
+    	//"1. Перевод псевдокода на язык Java
+        System.out.println("1. Перевод псевдокода на язык Java");
         int age = 18;
         if(age > 20) {
             System.out.println("Входите пожалуйста\n");
