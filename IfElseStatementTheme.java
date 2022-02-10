@@ -1,31 +1,30 @@
 public class IfElseStatementTheme {
     public static void main (String [] args) {
-        //1. Перевод псевдокода на язык Java
-        System.out.println("1. Перевод псевдокода на язык Java");
-        int age = 17;
+System.out.println("1. Перевод псевдокода на язык Java");
+        int age = 18;
         if(age > 20) {
-            System.out.println("Входите пожалуйста");
+            System.out.println("Входите пожалуйста\n");
         } else {
-            System.out.println("Вход для достигших 20 лет.");
+            System.out.println("Вход для достигших 20 лет.\n");
         }
         boolean maleGender = false;
         if(!maleGender) {
-            System.out.println("Вход только для девушек.");
+            System.out.println("Вход только для девушек.\n");
         }
         double manHeight = 1.70;
         if(manHeight < 1.80) {
-            System.out.println("Вам на первый ряд");
+            System.out.println("Вам на первый ряд\n");
         } else {
-            System.out.println("Вам на второй ряд");
+            System.out.println("Вам на второй ряд\n");
         }
 
         char firstLetterName = "Mary".charAt(0);
         if(firstLetterName == 'M') {
-            System.out.println("Возможно её имя Mary");
+            System.out.println("Возможно её имя Mary\n");
         } else if (firstLetterName == 'I') {
-            System.out.println("Возможно её имя Irina");
+            System.out.println("Возможно её имя Irina\n");
         } else {
-             System.out.println("Я не угадал.");
+             System.out.println("Я не угадал.\n");
         } 
 
         //2. Поиск максимального и минимального числа
@@ -74,7 +73,7 @@ public class IfElseStatementTheme {
         char symbol = '\u005A';
         if (symbol >= 'a' && symbol <= 'z' || symbol >= 'A' && symbol <= 'Z') {
             System.out.println("Код \'\\u005A' является буквой " + symbol);
-        } else if (symbol >= '0' && symbol <= '9') {
+        } else if (symbol >= '0' & symbol <= '9') {
             System.out.println("Код \'\\u005A' является цифрой " + symbol);
         } else {    
             System.out.println("Код \'\\u005A' не является ни цифрой ни буквой " + symbol);
@@ -86,19 +85,19 @@ public class IfElseStatementTheme {
         int depositAmount = 300000;
         int accruedInterestPerYear = (depositAmount / 100);
         if (depositAmount < 100000) {
-            int a = accruedInterestPerYear * (interestRate = 5) ;
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a
-                     + "\nИтоговая сумму с % = " + (depositAmount + a));
+            int a1 = accruedInterestPerYear * (interestRate = 5) ;
+            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
+                     + "\nИтоговая сумму с % = " + (depositAmount + a1));
         }
-        if (depositAmount >= 100000 || depositAmount <= 300000) {
-            int a = accruedInterestPerYear * (interestRate = 7);
-             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a
-                      + "\nИтоговая сумму с % = " + (depositAmount + a));
+        if (depositAmount >= 100000 & depositAmount <= 300000) {
+            int a1 = accruedInterestPerYear * (interestRate = 7);
+             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
+                      + "\nИтоговая сумму с % = " + (depositAmount + a1));
         }
         if ( depositAmount > 300000) {
-            int a = accruedInterestPerYear * (interestRate = 10);
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a
-                     + "\nИтоговая сумму с % = " + (depositAmount + a));
+            int a1 = accruedInterestPerYear * (interestRate = 10);
+            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " +  a1
+                     + "\nИтоговая сумму с % = " + (depositAmount + a1));
         } 
         
         //7.Определение оценки по предметам
@@ -128,28 +127,38 @@ public class IfElseStatementTheme {
         
         //8.Расчет прибыли (убытка)
         System.out.println("\n8. Расчет прибыли (убытка).");
-        final int year = 12; // в году 12 месяцев
-        int rentalRoomMonth = 5000; //аренда помещения в месяц
-        int salesPerMonth = 15000; // продажа товара в месяц
-        int costOfGoodsMonth  = 9000; //себестоимость товара в месяц
+        int year = 12;
+        int rentalRoomMonth = 5000;
+        int salesPerMonth = 15000;
+        int costOfGoodsMonth  = 9000;
         int profit = (salesPerMonth - costOfGoodsMonth - rentalRoomMonth) * year ;
         if (profit > 0) {
-        System.out.println("+ " + profit);
+            System.out.println("+ " + profit);
         } else {
-        System.out.println("- " + profit);
+            System.out.println("- " + profit);
         }
 
-        //9.Определение существования треугольника
+         //9.Определение существования треугольника
         System.out.println("\n9. Определение существования треугольника.");
         int sideA = 5;
         int sideB = 5;
-        int sideC = 7;
-        if (sideC * sideC == sideA * sideA + sideB * sideB) {
-           System.out.println("Треугольник существует");   
+        int sideC = 9;
+        //Формула полупериметра
+        double p = (sideA + sideB + sideC) / 2;
+        //Формула Герона
+        double areaTriangle = (Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC)));
+        if (areaTriangle > 0) {
+            System.out.println("Треугольник существует");   
         } else {
-           System.out.println("Треугольника с углом 90' и сторонами 5, 5 и 9 не существует");
+            System.out.println("Треугольник не существует");
         }
-
+        
+        System.out.println("|" + "\\");
+        System.out.println("|" + " " + "\\");
+        System.out.println("|" + "  " + "\\");
+        System.out.println("|" + "   " + "\\");
+        System.out.println("|" + "____" + "\\" + "_____");
+        
         //10.Подсчет количества банкнот
         System.out.println("\n10. Подсчет количества банкнот.");
         int amountMoney = 567; 
@@ -161,5 +170,7 @@ public class IfElseStatementTheme {
         System.out.println("купюры наминалом по 50 - " + banknoteDenomination_50 + "шт" + "\nкупюры наминалом по 10 -"+ banknoteDenomination_10 + "шт"
                 + "\nкупюры по наминалом 1 - " + banknoteDenomination_1 + "шт");
         System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));
+        
+        
     }
 }
