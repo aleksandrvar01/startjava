@@ -1,5 +1,5 @@
 public class IfElseStatementTheme {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         //1. Перевод псевдокода на язык Java
         System.out.println("1. Перевод псевдокода на язык Java");
         int age = 18;
@@ -41,7 +41,7 @@ public class IfElseStatementTheme {
         //3.Работа с числом
         System.out.println("\n3. Работа с числом.");
         int number = 18;
-        if (number %2 == 0) {
+        if (number % 2 == 0) {
             System.out.println("Число является четным.");
         } else {
             System.out.println("Число является нечетным.");
@@ -62,10 +62,10 @@ public class IfElseStatementTheme {
         if ((c = (a / 100)) == (b / 100)) {
             System.out.println("Цифры из разряда сотен одинаковые равны " + c);
         }    
-        if ((c = ((a / 10) %10)) == ((b / 10) %10)) {
+        if ((c = ((a / 10) % 10)) == ((b / 10) % 10)) {
             System.out.println("Цифры из разряда десятков одинаковые равны " + c);
         }     
-        if ((c = a %10) == (b %10)) {
+        if ((c = a % 10) == (b % 10)) {
             System.out.println("Цифры из разряда единиц одинаковые равны " + c);
         }
 
@@ -82,29 +82,27 @@ public class IfElseStatementTheme {
 
        //6.Определение суммы вклада и начисленных банком %
         System.out.println("\n6. Определение суммы вклада и начисленных банком %.");
+        int interestYear = 0;
         int interestRate;
         int depositAmount = 300000;
         int a1 = (depositAmount / 100);
         if (depositAmount < 100000) {
-            int interestYear = a1 * (interestRate = 5);
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
-                     + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
+            interestYear = a1 * (interestRate = 5);
         }
         if (depositAmount >= 100000 & depositAmount <= 300000) {
-            int interestYear = a1 * (interestRate = 7);
-             System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
-                      + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
+            interestYear = a1 * (interestRate = 7);    
         }
         if (depositAmount > 300000) {
-            int interestYear = a1 * (interestRate = 10);
-            System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
-                     + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
+            interestYear = a1 * (interestRate = 10);
         }
-        
+        System.out.println("Cумму вклада = " + depositAmount + "\nHачисленные % = " + interestYear
+                     + "\nИтоговая сумму с % = " + (depositAmount + interestYear));
+
         //7.Определение оценки по предметам
         System.out.println("\n7. Определение оценки по предметам.");
         int interestOnHistory = 59;
         int interestOnProgramming = 91;
+        int averageInterest = (interestOnProgramming + interestOnHistory) / 2;
         if (interestOnHistory > 91 ) {
             System.out.println("5 оценка по истории");
         } else if (interestOnHistory > 73 ) {
@@ -124,7 +122,7 @@ public class IfElseStatementTheme {
             System.out.println("Студент не сдал программирование");
         }
         System.out.println("Средний бал по предмету равен " + (4 / 1));
-        System.out.println("Средний % по предмету равен " + (91 / 4));
+        System.out.println("Средний % по предметам равен " + averageInterest);
         
         //8.Расчет прибыли (убытка)
         System.out.println("\n8. Расчет прибыли (убытка).");
@@ -159,7 +157,7 @@ public class IfElseStatementTheme {
         System.out.println("|" + " " + "\\");
         System.out.println("|" + "  " + "\\");
         System.out.println("|" + "   " + "\\");
-        System.out.println("|" + "____" + "\\" + "_____");
+        System.out.println("|" + "____" + "\\");
         
         //10.Подсчет количества банкнот
         System.out.println("\n10. Подсчет количества банкнот.");
@@ -171,6 +169,6 @@ public class IfElseStatementTheme {
         int banknoteDenomination_1 = (amountMoney - sumBanknote50 - sumBanknote10);
         System.out.println("купюры наминалом по 50 - " + banknoteDenomination_50 + "шт" + "\nкупюры наминалом по 10 - " + banknoteDenomination_10 + "шт"
                 + "\nкупюры по наминалом 1 - " + banknoteDenomination_1 + "шт");
-        System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));    
+        System.out.println("Сумма банкнот = " + (sumBanknote50 + sumBanknote10 + banknoteDenomination_1));
     }
 }
