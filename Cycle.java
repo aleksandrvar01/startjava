@@ -25,7 +25,7 @@ public class Cycle {
             number++;
             sum = number + sum ;
         }
-        } while(number < 19);
+        } while(number < 20);
       System.out.println(sum);
     }
 }
