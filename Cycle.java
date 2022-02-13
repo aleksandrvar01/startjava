@@ -18,13 +18,10 @@ public class Cycle {
     System.out.println("\nПодсчитайте с помощью цикла do-while сумму нечетных чисел от [10, 20]. Выведите ее на консоль");
     int a = 10; 
     int sum = 0;
-    do
-    {
-      a++;
-      sum = a % 2 != 0 ? sum + a : sum;
-    }
-    while(a < 20);
-    
+    do {
+        a++;
+        sum = a % 2 != 0 ? sum + a : sum;
+    } while(a < 20);
     System.out.println(sum);
     }
 }
