@@ -103,7 +103,7 @@ public class IfElseStatementTheme {
         int interestOnHistory = 59;
         int interestOnProgramming = 91;
         int averageInterest = (interestOnProgramming + interestOnHistory) / 2;
-        nt averageScore = (interestOnProgramming + interestOnHistory) / 100;
+        int averageScore = (4 + 2) / 2;
         if (interestOnHistory > 91 ) {
             System.out.println("5 оценка по истории");
         } else if (interestOnHistory > 73 ) {
