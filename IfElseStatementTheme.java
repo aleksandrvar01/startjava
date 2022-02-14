@@ -103,6 +103,7 @@ public class IfElseStatementTheme {
         int interestOnHistory = 59;
         int interestOnProgramming = 91;
         int averageInterest = (interestOnProgramming + interestOnHistory) / 2;
+        nt averageScore = (interestOnProgramming + interestOnHistory) / 100;
         if (interestOnHistory > 91 ) {
             System.out.println("5 оценка по истории");
         } else if (interestOnHistory > 73 ) {
@@ -121,7 +122,7 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Студент не сдал программирование");
         }
-        System.out.println("Средний бал по предмету равен " + (4 / 1));
+        System.out.println("Средний балл по предметам равен " + averageScore);
         System.out.println("Средний % по предметам равен " + averageInterest);
         
         //8.Расчет прибыли (убытка)
