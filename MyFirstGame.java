@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class MyFirstGame {
     public static void main(String[] args) {
         int a = 38;
         Scanner input = new Scanner(System.in);
