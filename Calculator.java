@@ -1,30 +1,25 @@
 public class Calculator {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         int a = 2;
         int b = 8;
         // Математические операции  +, -, *, /, ^, %
-        char symbol = '^';
-        if (symbol == '+') {
-            int addition = a + b;
-            System.out.println(addition);
-        } else if (symbol == '-') {
-            int subtraction = a - b; 
-            System.out.println(subtraction);
-        } else if (symbol == '*') {
-            int multiplication = a * b;
-            System.out.println(multiplication);
-        } else if (symbol == '%') {
-            int remainderOfDivision = a % b;
-            System.out.println(remainderOfDivision);
-        } else if (symbol == '/') {
-            int division = a / b;
-            System.out.println(division);
-        } else if (symbol == '^') {
-            int exponentiation = 1 ;
-            for (int i =0 ; i < b; i ++ ) {
-                exponentiation = exponentiation * a;
+        char sing = '^';
+        if (sing == '+') {
+            System.out.println(a + b);
+        } else if (sing == '-') {
+            System.out.println(a - b);
+        } else if (sing == '*') {
+            System.out.println(a * b);
+        } else if (sing == '%') {
+            System.out.println(a * b);
+        } else if (sing == '/') {
+            System.out.println(a / b);
+        } else if (sing == '^') {
+            int expResult = 1 ;
+            for (int i = 0; i < b; i++) {
+                expResult *= a;
             }   
-            System.out.println(exponentiation);
+            System.out.println(expResult);
         }
     }
 }
