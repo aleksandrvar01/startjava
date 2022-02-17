@@ -1,18 +1,19 @@
 import java.util.Scanner;
+
 public class MyFirstGame {
     public static void main(String[] args) {
-        int a = 38;
+        int numberComputer = 38;
         Scanner input = new Scanner(System.in);
-        int number;
+        int numberPlayer;
         do {
             System.out.println("Угадай число от 0 до 100");
-            number = input.nextInt();
-            if (a > number) {
+            numberPlayer = input.nextInt();
+            if (numberComputer > numberPlayer) {
                 System.out.println("Данное число меньше того, что загадал компьютер");
-            } else if (a < number) {
+            } else if (numberComputer < numberPlayer) {
                 System.out.println("Данное число больше того, что загадал компьютер");
             }
-        } while (a != number);
+        } while (numberComputer != numberPlayer);
         System.out.println("Поздравляю, число угадано!");
     }
 }
