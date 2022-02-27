@@ -6,7 +6,7 @@ public class Wolf {
     int age;
     String color;
 
-    void howls() {
+    void howl() {
         System.out.println("Воет");
     }
 
