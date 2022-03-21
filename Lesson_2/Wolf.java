@@ -7,50 +7,50 @@ public class Wolf {
     private String color;
 
     public String getGender() {
-    	return gender;
+        return gender;
     }
 
-    public String setGender() {
-
+    public void setGender(String wolfGender) {
+        gender = wolfGender;
     }
 
     public String getName() {
-    	return name;
+        return name;
     }
 
-    public String setName {
-
+    public void setName(String wolfName) {
+        name = wolfName;
     }
-
+ 
     public float getWeight() {
-    	return weight;
+        return weight;
     }
 
-    public float setWeight() {
-
+    public void setWeight(float wolfWeight) {
+        weight = wolfWeight;
     }
 
     public int getAge() {
-    	return age;
+        return age;
     }
 
-    public int setAge() {
-
+    public void setAge(int wolfAge) {
+        if (wolfAge > 8) {
+            System.out.print("Некорректный возраст\n");
+        } else {
+            age = wolfAge;
+        }
     }
 
     public String getColor() {
-    	return color;
+        return color;
     }
 
-    public String setColor() {
-
+    public void setColor(String wolfColor) {
+        color = wolfColor;
     }
 
-
-
-
-
-    public void howls() {
+    public void howl() {
         System.out.println("Воет");
     }
 
